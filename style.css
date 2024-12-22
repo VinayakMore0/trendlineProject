@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html, body {
@@ -31,7 +31,7 @@ html, body {
     gap: 1.5px;
 }
 
-.gola {
+.circle {
     width: 16.5px;
     height: 16.5px;
     background-color: black;
@@ -53,6 +53,10 @@ html, body {
 #nav-part2 h4 span {
     color: rgb(126, 126, 126);
     margin-left: 18.75px;
+}
+
+#nav-part2 h5 {
+    display: none;
 }
 
 #nav2 {
@@ -102,7 +106,7 @@ html, body {
 }
 
 .elem h1 {
-    font-size: 97.75px;
+    font-size: 7vw;
     font-weight: 300;
 }
 
@@ -124,10 +128,120 @@ html, body {
     object-fit: cover;
 }
 
+@media (max-width: 600px) {
+    #nav {
+        padding: 0 25px;
+        height: 70px;
+    }
 
+    #nav-part1 {
+        gap: 0px;
+    }
+    
+    .circle {
+        width: 16px;
+        height: 16px;
+    }
 
+    #nav-part2 {
+        align-items: center;
+        gap: 30px;
+    }
+    
+    #nav-part2 h4 {
+        display: none;
+        font-size: 15px;
+    }
+    
+    #nav-part2 h4 span {
+        margin-left: 10px;
+    }
 
+    #nav-part2 h4:nth-child(1) {
+        display: initial;
+        margin-right: 15px;
+    }
 
+    #nav-part2 h5 {
+        display: initial;
+    }
 
+    #nav-part2 h5 i {
+        font-size: 20px;
+        font-weight: 700;
+    }
 
+    #nav2 {
+        height: 70px;
+        justify-content: space-between;
+        gap: 10px;
+        height: 55px;
+        padding: 0 25px;
+    }
+    
+    #nav2 h3 {
+        font-size: 2.5vw;
+        font-weight: 600;
+        color: #6a6a6a;
+    }
+    
+    #content {
+        height: calc(100% - 140px);
+    }
 
+    #text-content {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 100%;
+        height: 35%;
+    }
+
+    #text-content::-webkit-scrollbar{
+        background-color: transparent;
+        height: 5px;
+    }
+
+    #text-content::-webkit-scrollbar-thumb {
+        background-color: orangered;
+    }
+
+    .elem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: fit-content;
+        height: 100%;
+        margin-right: 20px;
+    }
+
+    .elem h1 {
+        font-size: 24vw;
+        font-weight: 300;
+        white-space: nowrap;
+    }
+
+    #image-content {
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        height: 65%;
+    }
+
+    #image-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    #image-content img {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #image-content img:nth-child(3) {
+        object-position: left;
+    }
+}
