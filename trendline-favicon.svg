@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#FF4D4D"/>
+  
+  <!-- Letter T stylized as a trending line -->
+  <path d="M8 8h16" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <path d="M16 8v10" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Trending arrow line -->
+  <path d="M10 24L16 18L22 24" 
+        stroke="white" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"/>
+</svg>
